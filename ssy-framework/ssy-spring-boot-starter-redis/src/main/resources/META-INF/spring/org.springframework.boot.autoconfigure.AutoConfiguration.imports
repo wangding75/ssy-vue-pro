@@ -1,0 +1,2 @@
+cn.iocoder.ssy.framework.redis.config.ssyRedisAutoConfiguration
+cn.iocoder.ssy.framework.redis.config.ssyCacheAutoConfiguration

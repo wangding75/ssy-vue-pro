@@ -1,0 +1,3 @@
+cn.iocoder.ssy.framework.datasource.config.ssyDataSourceAutoConfiguration
+cn.iocoder.ssy.framework.mybatis.config.ssyMybatisAutoConfiguration
+cn.iocoder.ssy.framework.translate.config.ssyTranslateAutoConfiguration

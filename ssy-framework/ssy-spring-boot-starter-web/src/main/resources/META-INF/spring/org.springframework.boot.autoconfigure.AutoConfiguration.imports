@@ -1,0 +1,6 @@
+cn.iocoder.ssy.framework.apilog.config.ssyApiLogAutoConfiguration
+cn.iocoder.ssy.framework.jackson.config.ssyJacksonAutoConfiguration
+cn.iocoder.ssy.framework.swagger.config.ssySwaggerAutoConfiguration
+cn.iocoder.ssy.framework.web.config.ssyWebAutoConfiguration
+cn.iocoder.ssy.framework.xss.config.ssyXssAutoConfiguration
+cn.iocoder.ssy.framework.banner.config.ssyBannerAutoConfiguration

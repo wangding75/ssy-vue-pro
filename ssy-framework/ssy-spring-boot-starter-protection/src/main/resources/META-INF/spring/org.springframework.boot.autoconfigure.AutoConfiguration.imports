@@ -1,0 +1,3 @@
+cn.iocoder.ssy.framework.idempotent.config.ssyIdempotentConfiguration
+cn.iocoder.ssy.framework.lock4j.config.ssyLock4jConfiguration
+cn.iocoder.ssy.framework.ratelimiter.config.ssyRateLimiterConfiguration

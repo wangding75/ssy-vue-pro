@@ -1,0 +1,2 @@
+cn.iocoder.ssy.framework.tracer.config.SsyTracerAutoConfiguration
+cn.iocoder.ssy.framework.tracer.config.ssyMetricsAutoConfiguration

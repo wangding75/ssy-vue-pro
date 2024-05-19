@@ -1,0 +1,3 @@
+cn.iocoder.ssy.framework.mq.redis.config.SsyRedisMQProducerAutoConfiguration
+cn.iocoder.ssy.framework.mq.redis.config.SsyRedisMQConsumerAutoConfiguration
+cn.iocoder.ssy.framework.mq.rabbitmq.config.SsyRabbitMQAutoConfiguration

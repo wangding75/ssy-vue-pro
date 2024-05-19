@@ -1,0 +1,3 @@
+cn.iocoder.ssy.framework.security.config.ssySecurityAutoConfiguration
+cn.iocoder.ssy.framework.security.config.ssyWebSecurityConfigurerAdapter
+cn.iocoder.ssy.framework.operatelog.config.SsyOperateLogConfiguration
