@@ -13,7 +13,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author  Ssy
  */
 @SuppressWarnings("SpringComponentScan") // 忽略 IDEA 无法识别 ${ssy.info.base-package}
-@SpringBootApplication(scanBasePackages = {"${ssy.info.base-package}.server", "${ssy.info.base-package}.module"})
+@SpringBootApplication(scanBasePackages = {
+        "${ssy.info.base-package}.server",
+        "${ssy.info.base-package}.module",
+        "cn.ssy.module"
+})
 public class SsyServerApplication {
 
     public static void main(String[] args) {

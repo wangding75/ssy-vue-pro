@@ -27,14 +27,7 @@
             <version>${revision}</version>
         </dependency>
 
-        <!-- 业务组件 -->
-
         <!-- Web 相关 -->
-        <dependency>
-            <groupId>cn.iocoder.boot</groupId>
-            <artifactId>ssy-spring-boot-starter-web</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>cn.iocoder.boot</groupId>
             <artifactId>ssy-spring-boot-starter-security</artifactId>
@@ -51,18 +44,24 @@
             <artifactId>ssy-spring-boot-starter-redis</artifactId>
         </dependency>
 
-        <!-- 工具类相关 -->
+        <!-- Job 定时任务相关 -->
         <dependency>
             <groupId>cn.iocoder.boot</groupId>
-            <artifactId>ssy-spring-boot-starter-excel</artifactId>
+            <artifactId>ssy-spring-boot-starter-job</artifactId>
         </dependency>
 
         <!-- Test 测试相关 -->
         <dependency>
             <groupId>cn.iocoder.boot</groupId>
             <artifactId>ssy-spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
+        <!-- 工具类相关 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>ssy-spring-boot-starter-excel</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

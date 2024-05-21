@@ -221,6 +221,15 @@ ssy:
     enable: false
   demo: false # 关闭演示模式
   tencent-lbs-key: TVDBZ-TDILD-4ON4B-PFDZA-RNLKH-VVF6E # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
+  finance:
+    xq:
+      area-code: 86
+      user-id: 18862006178
+      password: 110vey0uwan
+      rememberMe: true
+      master-req-ip: 192.168.1.100:7779
+      slave-rcv-ip: 192.168.1.100:7779
+
 
 justauth:
   enabled: true
