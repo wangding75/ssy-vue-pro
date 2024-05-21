@@ -23,6 +23,7 @@
         <module>ssy-module-mall</module>
         <module>ssy-module-crm</module>
         <module>ssy-module-erp</module>
+        <module>ssy-module-finance</module>
     </modules>
 
     <name>${project.artifactId}</name>
