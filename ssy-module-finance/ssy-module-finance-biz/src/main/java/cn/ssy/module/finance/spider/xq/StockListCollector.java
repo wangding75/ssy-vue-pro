@@ -22,11 +22,11 @@ import java.util.List;
 public class StockListCollector extends AbstractCollector<List<FinanceAsset>> {
 
 
-    private MarketType marketType;
+    private final MarketType marketType;
 
-    private int page;
+    private final int page;
 
-    private int pageSize;
+    private final int pageSize;
 
     public StockListCollector(String cookies, MarketType marketType) {
         this(null, cookies, marketType, 1, Integer.MAX_VALUE);

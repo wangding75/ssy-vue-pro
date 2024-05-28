@@ -2,10 +2,7 @@ package cn.ssy.module.finance.dal.mysql.mapper;
 
 import cn.iocoder.ssy.framework.mybatis.core.mapper.BaseMapperX;
 import cn.ssy.module.finance.dal.dataobject.FinanceAsset;
-import com.baomidou.mybatisplus.extension.toolkit.Db;
 import org.apache.ibatis.annotations.Mapper;
-
-import java.util.Collection;
 
 /**
  * @author wangding

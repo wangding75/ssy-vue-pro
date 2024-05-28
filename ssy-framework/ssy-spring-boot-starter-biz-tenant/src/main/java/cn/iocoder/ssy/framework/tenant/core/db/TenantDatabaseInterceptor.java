@@ -28,6 +28,7 @@ public class TenantDatabaseInterceptor implements TenantLineHandler {
         // 在 OracleKeyGenerator 中，生成主键时，会查询这个表，查询这个表后，会自动拼接 TENANT_ID 导致报错
         ignoreTables.add("DUAL");
         ignoreTables.add("finance_asset");
+        ignoreTables.add("finance_stock_k_line_day");
     }
 
     @Override
