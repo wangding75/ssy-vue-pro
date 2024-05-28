@@ -15,14 +15,14 @@
         <!-- 各种 module 拓展 -->
         <module>ssy-module-system</module>
         <module>ssy-module-infra</module>
-        <module>ssy-module-bpm</module>
-        <module>ssy-module-member</module>
-        <module>ssy-module-report</module>
-        <module>ssy-module-mp</module>
-        <module>ssy-module-pay</module>
-        <module>ssy-module-mall</module>
-        <module>ssy-module-crm</module>
-        <module>ssy-module-erp</module>
+<!--        <module>ssy-module-bpm</module>-->
+<!--        <module>ssy-module-member</module>-->
+<!--        <module>ssy-module-report</module>-->
+<!--        <module>ssy-module-mp</module>-->
+<!--        <module>ssy-module-pay</module>-->
+<!--        <module>ssy-module-mall</module>-->
+<!--        <module>ssy-module-crm</module>-->
+<!--        <module>ssy-module-erp</module>-->
         <module>ssy-module-finance</module>
     </modules>
 

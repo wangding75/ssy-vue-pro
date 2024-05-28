@@ -19,6 +19,8 @@ public class XQSpiderProperties {
     @NotEmpty(message = "密码不能为空")
     private String password;
 
+    private String cookies;
+
     private Boolean rememberMe = true;
 
     private String masterReqIp;

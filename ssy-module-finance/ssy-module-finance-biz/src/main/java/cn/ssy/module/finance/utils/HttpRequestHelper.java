@@ -1,0 +1,83 @@
+package cn.ssy.module.finance.utils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.zip.GZIPInputStream;
+
+public class HttpRequestHelper {
+
+    private Map<String, String> config;
+    private boolean post;
+    private boolean gzip;
+
+    public HttpRequestHelper(String webSite, String cookie) {
+        this(webSite, true, cookie);
+    }
+
+    public HttpRequestHelper(String webSite, boolean gzip, String cookie) {
+        this.config = new HashMap<>();
+        if (gzip) {
+            this.gzipDecode()
+                    .addToHeader("Accept-Encoding", "gzip,deflate,sdch");
+        } else {
+            this.addToHeader("Accept-Encoding", "utf-8");
+        }
+        this.addToHeader("Referer", webSite)
+                .addToHeader("Cookie", cookie)
+                .addToHeader("Host", "xueqiu.com");
+    }
+
+    public HttpRequestHelper post() {
+        this.post = true;
+        return this;
+    }
+
+    public HttpRequestHelper gzipDecode() {
+        this.gzip = true;
+        return this;
+    }
+
+    public HttpRequestHelper addToHeader(String key, String val) {
+        this.config.put(key, val);
+        return this;
+    }
+
+    public HttpRequestHelper addToHeader(String key, int val) {
+        this.config.put(key, String.valueOf(val));
+        return this;
+    }
+
+    public String request(URL url) throws IOException {
+        return request(url, this.config);
+    }
+
+
+    public String request(URL url, Map<String, String> config) throws IOException {
+        HttpURLConnection httpURLConn = null;
+        try {
+            httpURLConn = (HttpURLConnection) url.openConnection();
+            if (post) httpURLConn.setRequestMethod("POST");
+            httpURLConn.setDoOutput(true);
+            for (Map.Entry<String, String> entry : config.entrySet())
+                httpURLConn.setRequestProperty(entry.getKey(), entry.getValue());
+            httpURLConn.connect();
+            InputStream in = httpURLConn.getInputStream();
+            if (gzip) in = new GZIPInputStream(in);
+            BufferedReader bd = new BufferedReader(new InputStreamReader(in));
+            StringBuilder builder = new StringBuilder();
+            String text;
+            while ((text = bd.readLine()) != null) builder.append(text);
+            return builder.toString();
+        } finally {
+            if (httpURLConn != null) httpURLConn.disconnect();
+        }
+    }
+
+
+}

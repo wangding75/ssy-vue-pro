@@ -2,6 +2,7 @@ package cn.iocoder.ssy.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 项目的启动类
@@ -18,6 +19,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
         "${ssy.info.base-package}.module",
         "cn.ssy.module"
 })
+@EnableScheduling
 public class SsyServerApplication {
 
     public static void main(String[] args) {

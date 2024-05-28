@@ -171,6 +171,7 @@ logging:
     cn.iocoder.ssy.module.statistics.dal.mysql: debug
     cn.iocoder.ssy.module.crm.dal.mysql: debug
     cn.iocoder.ssy.module.erp.dal.mysql: debug
+    cn.ssy: debug
     org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR # TODO 芋艿：先禁用，Spring Boot 3.X 存在部分错误的 WARN 提示
 
 debug: false
@@ -227,6 +228,7 @@ ssy:
       user-id: 18862006178
       password: 110vey0uwan
       rememberMe: true
+      cookies: cookiesu=641694447194614; device_id=f3e0535f3d926e37bc5de783afd17a53; s=aj17pozz9g; Hm_lvt_1db88642e346389874251b5a1eded6e3=1714897366,1715352591,1716713612; xq_a_token=e2809c6121caed589105004067539413eb9c5492; xqat=e2809c6121caed589105004067539413eb9c5492; xq_r_token=3d5f217d5a51526c1aa86c19a7e061275d7c25a4; xq_id_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1aWQiOjQ5MDUxMjM2MTIsImlzcyI6InVjIiwiZXhwIjoxNzE3NDg5NDI1LCJjdG0iOjE3MTY3MTM3MDM1MjgsImNpZCI6ImQ5ZDBuNEFadXAifQ.oOZCN9QN_gh0ovBBuwJW4vM02c372RifdlwcScdE3hPEm4G60-_Mr1HBsoBy_Uq3LuZnxbMPZIzL4KMgeyvn2EUhfrd7PCnFPldXpBau_ePSze95BJt0wjZXCTKRMFMQ886hIGAObKgGSCbkx4fuV2FMSf1Ei6_mg6JNElxsvOSruZu9hqaWAkWWTeUCMvepf-uYLe1HZZaRM9yywOH_3Hla1cbwAVKJbLMelbSZuGsO5pxpX5HJIeuM_UXSqen1Wa7Vuovx9GERwkR1O224LEFYeTSVIq7K0U1pU09PnR869bOeSrKKKi5cv5vVtzOv7vmyE1nUQbTGXN5ZieK31g; xq_is_login=1; u=4905123612; is_overseas=0; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1716713707
       master-req-ip: 192.168.1.100:7779
       slave-rcv-ip: 192.168.1.100:7779
 
