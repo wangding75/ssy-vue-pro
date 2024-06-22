@@ -50,7 +50,7 @@ public class StockListCollector extends AbstractCollector<List<FinanceAsset>> {
 
     @Override
     public List<FinanceAsset> collectLogic() throws Exception {
-        String target = URLMapper.STOCK_LIST.getURL();
+        String target = URLMapper.XQ_STOCK_LIST.getURL();
         RequestParaBuilder builder = new RequestParaBuilder(target)
                 .addParameter("page", page)
                 .addParameter("size", pageSize)

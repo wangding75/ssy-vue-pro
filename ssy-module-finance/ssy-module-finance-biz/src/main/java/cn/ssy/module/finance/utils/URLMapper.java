@@ -9,10 +9,18 @@ public enum URLMapper {
 
     /*--------------------------------  Xue Qiu     --------------------------------------*/
 
-    MAIN_PAGE("雪球主页", "https://xueqiu.com"),
-    LOGIN_PAGE("雪球登录接口", "http://xueqiu.com/user/login"),
-    STOCK_LIST("获取雪球股票列表", "https://stock.xueqiu.com/v5/stock/screener/quote/list.json"),
-    STOCK_KLINE("获取雪球股票K线图", "https://stock.xueqiu.com/v5/stock/chart/kline.json");
+    XQ_MAIN_PAGE("雪球主页", "https://xueqiu.com"),
+    XQ_LOGIN_PAGE("雪球登录接口", "http://xueqiu.com/user/login"),
+    XQ_STOCK_LIST("获取雪球股票列表", "https://stock.xueqiu.com/v5/stock/screener/quote/list.json"),
+    XQ_STOCK_KLINE("获取雪球股票K线图", "https://stock.xueqiu.com/v5/stock/chart/kline.json"),
+
+    /*--------------------------------  天天基金     --------------------------------------*/
+
+    TT_FUND_LIST("获取天天基金列表", "https://fund.eastmoney.com/Data/Fund_JJJZ_Data.aspx"),
+
+    /*--------------------------------  同花顺     --------------------------------------*/
+    THS_FUND_PRICE_LIST("获取同花顺基金净值列表", "https://fund.10jqka.com.cn/dockercache/fund/historynet/${symbol}"),
+    THS_FUND_LIST("获取同花顺基金列表", "https://fund.10jqka.com.cn/data/Net/info/all_rate_desc_0_0_${page}_${pageSize}_0_0_0_jsonp_g.html");
 
 
 //    STOCK_MAIN_PAGE("https://xueqiu.com/query/v1/symbol/search/status"),

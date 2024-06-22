@@ -37,7 +37,7 @@ public class XQCookieProcessor implements CookieProcessor {
         }
         try {
             connection = connection == null ?
-                    (HttpURLConnection) new URL(URLMapper.MAIN_PAGE.getURL()).openConnection() : connection;
+                    (HttpURLConnection) new URL(URLMapper.XQ_MAIN_PAGE.getURL()).openConnection() : connection;
             connection.connect();
 
             String cookie = cookies != null ? cookies : connection.getHeaderFields().get("Set-Cookie")
@@ -62,7 +62,7 @@ public class XQCookieProcessor implements CookieProcessor {
             throw new IllegalArgumentException("null parameter: userID or password");
         }
 
-        RequestParaBuilder builder = new RequestParaBuilder(URLMapper.LOGIN_PAGE.getURL())
+        RequestParaBuilder builder = new RequestParaBuilder(URLMapper.XQ_LOGIN_PAGE.getURL())
                 .addParameter("areacode", areacode)
                 .addParameter("telephone", userID)
                 .addParameter("password", passwd)

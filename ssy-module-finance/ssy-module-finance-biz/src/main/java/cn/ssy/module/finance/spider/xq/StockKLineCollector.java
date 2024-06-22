@@ -43,7 +43,7 @@ public class StockKLineCollector extends AbstractCollector<List<FinanceStockKLin
 
     @Override
     public List<FinanceStockKLineDay> collectLogic() throws Exception {
-        String target = URLMapper.STOCK_KLINE.getURL();
+        String target = URLMapper.XQ_STOCK_KLINE.getURL();
         String count = isInit ? "-9999999": "-1";
         RequestParaBuilder builder = new RequestParaBuilder(target)
                 .addParameter("symbol", symbol)

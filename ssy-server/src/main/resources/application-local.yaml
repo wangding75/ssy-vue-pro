@@ -67,7 +67,7 @@ spring:
 
   # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
   redis:
-    host: 127.0.0.1 # 地址
+    host: 172.20.102.14 # 地址
     port: 6379 # 端口
     database: 0 # 数据库索引
 #    password: dev # 密码，建议生产环境开启
@@ -171,7 +171,7 @@ logging:
     cn.iocoder.ssy.module.statistics.dal.mysql: debug
     cn.iocoder.ssy.module.crm.dal.mysql: debug
     cn.iocoder.ssy.module.erp.dal.mysql: debug
-    cn.ssy: debug
+#    cn.ssy: debug
     org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR # TODO 芋艿：先禁用，Spring Boot 3.X 存在部分错误的 WARN 提示
 
 debug: false

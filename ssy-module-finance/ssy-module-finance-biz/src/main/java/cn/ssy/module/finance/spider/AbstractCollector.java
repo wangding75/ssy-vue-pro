@@ -22,7 +22,7 @@ public abstract class AbstractCollector<T> extends AbstractRequester implements 
     protected abstract T collectLogic() throws Exception;
 
     public AbstractCollector(TimeWaitingStrategy strategy, String cookies) {
-        this(strategy, URLMapper.MAIN_PAGE.toString(), cookies);
+        this(strategy, URLMapper.XQ_MAIN_PAGE.toString(), cookies);
     }
 
     /**

@@ -29,6 +29,7 @@ public class TenantDatabaseInterceptor implements TenantLineHandler {
         ignoreTables.add("DUAL");
         ignoreTables.add("finance_asset");
         ignoreTables.add("finance_stock_k_line_day");
+        ignoreTables.add("finance_fund_price");
     }
 
     @Override

@@ -1,6 +1,6 @@
 package cn.iocoder.ssy.framework.test.core.ut;
 
-import cn.iocoder.ssy.framework.redis.config.ssyRedisAutoConfiguration;
+import cn.iocoder.ssy.framework.redis.config.SsyRedisAutoConfiguration;
 import cn.iocoder.ssy.framework.test.config.RedisTestConfiguration;
 import org.redisson.spring.starter.RedissonAutoConfiguration;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;

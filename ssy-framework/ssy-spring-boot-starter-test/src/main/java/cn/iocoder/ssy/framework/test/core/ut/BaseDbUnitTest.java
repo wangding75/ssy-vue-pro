@@ -1,7 +1,7 @@
 package cn.iocoder.ssy.framework.test.core.ut;
 
-import cn.iocoder.ssy.framework.datasource.config.ssyDataSourceAutoConfiguration;
-import cn.iocoder.ssy.framework.mybatis.config.ssyMybatisAutoConfiguration;
+import cn.iocoder.ssy.framework.datasource.config.SsyDataSourceAutoConfiguration;
+import cn.iocoder.ssy.framework.mybatis.config.SsyMybatisAutoConfiguration;
 import cn.iocoder.ssy.framework.test.config.SqlInitializationTestConfiguration;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration;
